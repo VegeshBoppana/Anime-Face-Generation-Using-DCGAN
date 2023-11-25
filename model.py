@@ -25,6 +25,23 @@ for image_name in os.listdir(BASE_DIR):
     image_paths.append(image_path)
 
 # print(image_paths[:5])
+# print(len(image_paths))
+
+#                VISUALIZE THE IMAGE DATA SET TO DISPLAY GIRD OF IMAGES
+
+plt.figure(figsize =(20, 20))
+temp_images = image_paths[:49]
+index = 1
+
+for image_path in temp_images:
+    plt.subplot(7 , 7 , index)
+
+    img = load_img(image_path)
+
+    img = np.array(img)
+    plt.imshow(img)
+    plt.axis('off') # in colab or jupyter notebooks convert this line of code as "  plt.axis('/off) "
+    index+=1
 
 
 
