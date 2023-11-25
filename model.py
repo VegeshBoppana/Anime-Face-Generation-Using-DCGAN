@@ -15,6 +15,18 @@ from tensorflow.keras.losses import BinaryCrossentropy
 warnings.filterwarnings('ignore')
 
 
+#LOAD FILES
+
+BASE_DIR = "D:\Anime-Face-Generation-Using-DCGAN\data"
+
+image_paths = []
+for image_name in os.listdir(BASE_DIR):
+    image_path = os.path.join(BASE_DIR, image_name)
+    image_paths.append(image_path)
+
+# print(image_paths[:5])
+
+
 
 
 
