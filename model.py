@@ -44,6 +44,16 @@ for image_path in temp_images:
     index+=1
 
 
+#prep process the images
+train_images = [np.array(load_img(path)) for path in tqdm(image_paths)]
+train_images = np.array(train_images)
+
+
+
+
+
+
+
 
 
 
